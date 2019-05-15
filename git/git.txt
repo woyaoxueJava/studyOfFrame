@@ -1,0 +1,42 @@
+
+git init => git add filename => git commit -m msg
+
+
+commit后版本回退：git reset --hard 版本标识(指定版本)/git reset --hard head^/head^^(上一级/上上一级) 
+工作目录回退：git checkout -- filename
+缓存区回退：git reset head filename  => git checkout -- filename
+
+rm filename => git commit -s 改变可直接提交
+git remote add origin https:...将本地仓库跟远程链接
+git push -u origin master  第一次提交
+
+...
+
+git push 第一次之后提交
+
+git clone url
+
+git remote -v 查看fetch和push的源
+
+git pull 从远程仓库拉取最新版本
+
+origin 主干 branch 分支
+
+git branch 查看仓库分支
+
+git checkout branchname 切换分支
+
+git checkout master => git merge branchname => git branch -d branchname 合并分支
+
+分支之间的改变互不影响，就算修改的文件是创建分支的那些
+
+merge conflics:融合的分支和主干文件出现冲突，需手动fix
+
+vim模式：i 编辑模式 => esc => :wq保存并退出vim
+
+git push -u remotesubname 将本地当前分支与远程分支建立联系
+
+git push localsub:remotesub 单纯将本地推送到远程分支，两者不会产生联系
+
+git push 如果使用过git push -u remotesubname则可以直接使用该命令
+
