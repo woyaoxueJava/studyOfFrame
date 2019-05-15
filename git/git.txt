@@ -32,6 +32,8 @@ git checkout master => git merge branchname => git branch -d branchname 合并�
 
 merge conflics:融合的分支和主干文件出现冲突，需手动fix
 
+如果工作目录有改动,但未经过git add操作，直接git commit -a 会进入vim模式
+
 vim模式：i 编辑模式 => esc => :wq保存并退出vim
 
 git push -u remotesubname 将本地当前分支与远程分支建立联系
